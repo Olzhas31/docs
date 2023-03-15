@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/2023ProjectsDB?currentSchema=docs'
+    username: 'postgres'
+    password: 'root'
+
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        default_schema: 'docs'
+      show-sql: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  servlet:
+    multipart:
+      max-file-size: 10MB
+server:
+  port: 8080
+  error:
+    include-message: always
