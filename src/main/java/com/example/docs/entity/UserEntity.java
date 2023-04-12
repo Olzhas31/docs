@@ -26,7 +26,7 @@ public class UserEntity implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(unique = true, updatable = false)
+    @Column(unique = true)
     private String email;
     private String password;
     private String role;
@@ -56,6 +56,10 @@ public class UserEntity implements UserDetails {
     @OneToOne(mappedBy = "supervisor", cascade = CascadeType.ALL)
     @ToString.Exclude
     private LaboratoryEntity laboratory;
+
+    @ManyToMany(mappedBy = "users")
+    @ToString.Exclude
+    private List<ProjectEntity> projects;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

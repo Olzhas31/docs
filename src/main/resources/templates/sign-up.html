@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>viho - Premium Admin Template</title>
+    <title>Жүйеге тіркелу</title>
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
@@ -53,66 +53,52 @@
 <section>
     <div class="container-fluid p-0">
         <div class="row m-0">
-            <div class="col-xl-5"><img class="bg-img-cover bg-center" src="../assets/images/login3.jpg"
+            <div class="col-xl-5"><img class="bg-img-cover bg-center" src="../assets/images/2792499.jpg"
                                        alt="looginpage"></div>
             <div class="col-xl-7 p-0">
                 <div class="login-card">
                     <form action="/sign-up" method="POST" class="theme-form login-form">
-                        <h4>Create your account</h4>
-                        <h6>Enter your personal details to create account</h6>
+                        <h4>Ақпараттық жүйеге тіркелу</h4>
+                        <h6>Жүйеге тіркелу үшін өзіңіздің жеке деректеріңізді енгізіңіз</h6>
                         <div class="form-group">
-                            <label>Your Name</label>
+                            <label>Аты-жөніңіз</label>
                             <div class="small-group">
                                 <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
                                     <input class="form-control" name="name" type="text" required=""
-                                           placeholder="First Name">
+                                           placeholder="Есіміңіз">
                                 </div>
                                 <div class="input-group"><span class="input-group-text"><i class="icon-user"></i></span>
-                                    <input class="form-control" name="surname" type="text" required="" placeholder="Last Name">
+                                    <input class="form-control" name="surname" type="text" required="" placeholder="Тегіңіз">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Email Address</label>
+                            <label>Электрондық почтаңыз</label>
                             <div class="input-group"><span class="input-group-text"><i class="icon-email"></i></span>
-                                <input class="form-control" name="email" type="email" required="" placeholder="Test@gmail.com">
+                                <input class="form-control" name="email" type="email" required="" placeholder="test@gmail.com">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label>Password</label>
+                            <label>Құпия сөз</label>
                             <div class="input-group"><span class="input-group-text"><i class="icon-lock"></i></span>
                                 <input class="form-control" type="password" name="password" required=""
                                        placeholder="*********">
-                                <div class="show-hide"><span class="show">                         </span></div>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="checkbox">
                                 <input id="checkbox1" type="checkbox" required="">
-                                <label class="text-muted" for="checkbox1">Agree with
-                                    <span>Privacy Policy</span>
+                                <label class="text-muted" for="checkbox1"> Институт талаптарымен таныстым және онымен
+                                    <span>келісемін</span>
                                 </label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-primary btn-block" type="submit">Create Account</button>
+                            <button class="btn btn-primary btn-block" type="submit">Тіркелу</button>
                         </div>
-                        <div class="login-social-title">
-                            <h5>Sign in with</h5>
-                        </div>
-                        <div class="form-group">
-                            <ul class="login-social">
-                                <li><a href="https://www.linkedin.com/login" target="_blank"><i
-                                        data-feather="linkedin"></i></a></li>
-                                <li><a href="https://www.linkedin.com/login" target="_blank"><i
-                                        data-feather="twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/login" target="_blank"><i
-                                        data-feather="facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/login" target="_blank"><i
-                                        data-feather="instagram"> </i></a></li>
-                            </ul>
-                        </div>
-                        <p>Already have an account?<a class="ms-2" href="/login">Sign in</a></p>
+                        <p>Егер бұрын жүйеге тіркелген болсаңыз өз деретеріңізді қолданып жүйеге кіріңіз<br>
+                            <a class="ms-2" href="/login">Жүйеге кіру</a>
+                        </p>
                     </form>
                 </div>
             </div>

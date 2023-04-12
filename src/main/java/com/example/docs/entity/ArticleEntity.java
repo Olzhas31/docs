@@ -32,10 +32,6 @@ public class ArticleEntity {
     @Column(name = "public_date")
     private LocalDate publicDate; // публикация журнала
 
-    @ManyToOne
-    @JoinColumn(name = "project_id")
-    private ProjectEntity project; // проект
-
     @OneToMany(mappedBy = "article")
     @ToString.Exclude
     private List<CommentEntity> comments; // комментарии

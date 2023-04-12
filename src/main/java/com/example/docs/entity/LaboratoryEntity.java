@@ -21,6 +21,8 @@ public class LaboratoryEntity {
     @Column(columnDefinition = "TEXT")
     private String description; // описание лаборатории
 
+    private String urlPicture;
+
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "supervisor_id", referencedColumnName = "id")
     private UserEntity supervisor; // заведующии

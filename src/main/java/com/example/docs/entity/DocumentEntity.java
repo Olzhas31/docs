@@ -23,14 +23,20 @@ public class DocumentEntity {
     private Long id;
     private String name; // Найменование
     private String type; // enum: тип документа
-    private String folder; // enum: папка
     private String title; // тема
     private LocalDateTime createdTime; // время создание
     private LocalDateTime updatedTime; // время последнего обновление
     private LocalDateTime deadline; // срок
+    private LocalDateTime incomingDate; // келген күні
+    private LocalDateTime outgoingDate; // жіберілген күні
     private String number; // номер документа
     private String filename; // имя файлы, то что есть в системе
     private String status; // enum: статус документа
+    private LocalDateTime registerTime; // время регистрации
+
+    @ManyToOne
+    @JoinColumn(name = "folder_id")
+    private FolderEntity folder; // папка
 
     @ManyToOne
     @JoinColumn(name = "author_id")

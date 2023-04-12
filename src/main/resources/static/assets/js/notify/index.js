@@ -1,12 +1,12 @@
 'use strict';
-var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Loading</strong> page Do not close this page...', {
+var notify = $.notify('<i class="fa fa-bell-o"></i><strong>Парақша оқылуда</strong> парақшаны жаппаңыз', {
     type: 'theme',
     allow_dismiss: true,
-    delay: 2000,
+    delay: 3000,
     showProgressbar: true,
     timer: 300
 });
 
 setTimeout(function() {
-    notify.update('message', '<i class="fa fa-bell-o"></i><strong>Loading</strong> Inner Data.');
-}, 1000);
+    notify.update('message', '<i class="fa fa-bell-o"></i><strong>Парақша оқылуда</strong> Деректер қорымен байланыс...');
+}, 2000);

@@ -25,3 +25,5 @@ server:
   port: 8080
   error:
     include-message: always
+  tomcat:
+    uri-encoding: UTF-8

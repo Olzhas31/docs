@@ -6,4 +6,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface TagEntityRepository extends JpaRepository<TagEntity, Long> {
+
+    TagEntity findByName(String name);
+
+    boolean existsByName(String name);
 }

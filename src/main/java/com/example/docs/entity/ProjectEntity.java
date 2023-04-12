@@ -1,31 +1,55 @@
 package com.example.docs.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.hibernate.Hibernate;
 
 import java.util.List;
+import java.util.Objects;
 
-@Data
-@Table(name = "projects")
-@Entity
+@Getter
+@Setter
+@ToString
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "project")
 public class ProjectEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(mappedBy = "project")
-    private List<ArticleEntity> articles;
+    private String name;
+    private String description;
+    private Integer size;
 
-    // цели проекта
-    // название
-    // автор
-    // список персонала
-    // срок
+    @ManyToOne
+    @JoinColumn(name = "author_id")
+    @ToString.Exclude
+    private UserEntity author;
+
+    @ManyToMany
+    @JoinTable(name = "projects_user",
+            joinColumns = @JoinColumn(name = "project_id"),
+            inverseJoinColumns = @JoinColumn(name = "user_id"),
+            uniqueConstraints = @UniqueConstraint(
+                    columnNames = {"project_id", "user_id"})
+    )
+    @ToString.Exclude
+    private List<UserEntity> users;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
+        ProjectEntity that = (ProjectEntity) o;
+        return getId() != null && Objects.equals(getId(), that.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return getClass().hashCode();
+    }
 }
