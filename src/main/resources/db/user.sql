@@ -1,0 +1,17 @@
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (1, 'admin@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'ADMIN');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (2, 'director@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (3, 'jetekshi1@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (4, 'jetekshi2@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (5, 'jetekshi3@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (6, 'jetekshi4@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (7, 'jetekshi5@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (8, 'jetekshi6@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (9, 'jetekshi7@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (10, 'jetekshi8@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (11, 'jetekshi9@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (12, 'jetekshi10@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (13, 'jetekshi11@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (14, 'jetekshi12@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (15, 'jetekshi13@mail.ru', true, false, '$2a$12$gAp0Bs4gT3eF2j0zrXpZ1e58RzguFVZ0wUgfw7PrwBUwt0SkHKPJ6', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (16, '1@mail.ru', true, false, '$2a$10$ZbTxhj/ZjPfdi1cu67iBNem3fLoeoP0BnN1Wo5KgGQQvKbKeYhnca', 'USER');
+INSERT INTO docs.users (id, email, enabled, locked, password, role) VALUES (17, 'director_orinbasary1@mail.ru', true, false, '$2a$10$ZbTxhj/ZjPfdi1cu67iBNem3fLoeoP0BnN1Wo5KgGQQvKbKeYhnca', 'USER');
