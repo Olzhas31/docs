@@ -122,7 +122,7 @@ public class DocumentController {
         UserEntity executor = userRepository.findById(executorId)
                         .orElse(null);
 
-        if (file != null) {
+        if (file.getSize() > 0) {
             String fileName = StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename()));
 
             try {

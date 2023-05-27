@@ -21,6 +21,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -90,7 +91,8 @@ public class TestController {
                     .orElseThrow(()->new RuntimeException("not found"));
         }
 
-        List<ArticleEntity> articles = articleEntityRepository.findByAuthorsContains(user);
+        List<ArticleEntity> articles = articleEntityRepository.findByAuthorsContains(user)
+                .stream().sorted(Comparator.comparing(ArticleEntity::getPublicDate).reversed()).toList();
 
         model.addAttribute("i_user", iUser);
         model.addAttribute("user", user);

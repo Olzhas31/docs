@@ -388,7 +388,7 @@
                                                         <h5 class="user-name" th:text="${article.name}"></h5>
                                                         <span th:each="author: ${article.getAuthors()}"
                                                               th:text="${author.userDetail.surname + ' ' + author.userDetail.name + '. '}"></span>
-                                                        <h6 th:text="${article.publicDate}"></h6>
+                                                        <h6 th:text="${article.journalName + ' (' + article.numberOfJournal + ')  ' + article.publicDate}"></h6>
                                                     </div>
                                                 </div>
                                             </div>
